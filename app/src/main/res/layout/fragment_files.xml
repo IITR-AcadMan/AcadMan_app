@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground">
+   <ProgressBar
+       android:id="@+id/profiles"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:layout_gravity="center"
+       android:visibility="invisible"
+       />
+<android.support.v4.widget.SwipeRefreshLayout
+
+    android:id="@+id/refreshfiles"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/filesrec"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </android.support.v7.widget.RecyclerView>
+</android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>

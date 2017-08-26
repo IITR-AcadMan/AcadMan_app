@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/getheight">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+          <!--  <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/schedule_ele_col"
+                    android:gravity="center"
+                    android:text=" Schedule "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/schedule_ele_col"
+                    android:gravity="center"
+                    android:text="8AM-9AM"
+                    android:textColor="@android:color/black"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/schedule_ele_col"
+                    android:gravity="center"
+                    android:text=" 9AM-10AM "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/schedule_ele_col"
+                    android:gravity="center"
+                    android:text=" 10AM-11AM "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/schedule_ele_col"
+                    android:gravity="center"
+                    android:text=" 11AM-12AM "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/schedule_ele_col"
+                    android:gravity="center"
+                    android:text=" 12AM-1AM "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/schedule_ele_col"
+                    android:gravity="center"
+                    android:text=" 2AM-3AM "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/schedule_ele_col"
+                    android:gravity="center"
+                    android:text=" 3AM-4AM "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/schedule_ele_col"
+                    android:gravity="center"
+                    android:text=" 4AM-5AM "
+                    android:textColor="@android:color/black"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/schedule_ele_col"
+                    android:gravity="center"
+                    android:text=" 5AM-6AM "
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>-->
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/schedulerec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
